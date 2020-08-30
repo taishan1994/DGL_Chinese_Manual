@@ -1,4 +1,4 @@
-# DGL_Chinese_Manual
+# DGL_Chinese_Manual（DGL中文文档）
 This is the Chinese manual of the graph neural network library DGL, currently contains the User Guide.
 
 Based on DGL English document：https://docs.dgl.ai/index.html
