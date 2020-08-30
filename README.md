@@ -9,6 +9,7 @@ When I feel that one of the translation tools is not working well, I will compar
 Due to my limited ability, there may be problems in the translation process, please point out.
 
 Next is the relevant directory:
+···python
 目录
 begin 安装	4
 使用conda安装	4
@@ -118,6 +119,7 @@ begin 安装	4
 7.2.5 分布式采样	82
 7.2.6 分割工作量	83
 7.3	用于启动分布式训练/推理的工具	83
+```
 
 As for the use of some APIs related to DGL, it is currently not considered.
 I will further translate and organize MODEL TUTORIALS, please look forward to it.
