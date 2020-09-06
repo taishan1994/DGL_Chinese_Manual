@@ -1,7 +1,14 @@
 # DGL_Chinese_Manual（DGL中文文档）
-This is the Chinese manual of the graph neural network library DGL, currently contains the User Guide.
+This is the Chinese manual of the graph neural network library DGL, contains the User Guide and Model Tutorials.
 
 Based on DGL English document：https://docs.dgl.ai/index.html
+
+## Written in the front
+I uploaded the word version and the pdf version at the same time, you can use it at will. 
+But I hope you can point out the source when you use it. 
+After all, translation is not easy (although I use a translation tool...).
+
+## User Guide
 
 For each section, I have made a more detailed division according to the title. 
 The main translation tools are Youdao Translate tools and Google Translate tools. 
@@ -119,6 +126,104 @@ begin 安装	4<br>
       ---7.2.6 分割工作量	83<br>
   7.3	用于启动分布式训练/推理的工具	83<br>
   
-As for the use of some APIs related to DGL, it is currently not considered.
-I will further translate and organize MODEL TUTORIALS, please look forward to it.
+## Model Tutorials
+
+I have completed the translation of Model Tutorials.Since many pictures in the official documents are invalid, 
+so I marked the invalid places. In this document, you will find that in some places I directly use the original English text, 
+because the meaning of the original sentence may be clearer. Since I am a bit lazy, I will directly use <br>
+https://blog.csdn.net/weixin_45613751/ <br>
+to take screenshots of some complex formulas.
+
+Next is the relevant directory:<br>
+目录<br>
+1.	总览	2<br>
+--1.1 神经网络和它的变体	2<br>
+--1.2 批处理很多小图	2<br>
+--1.3 生成模型	2<br>
+--1.4 从图角度重新审视经典模型	3<br>
+2.	图卷积网络	3<br>
+--2.1 模型总览	3<br>
+----2.1.1 从消息传递的角度看GCN	3<br>
+----2.1.2 用DGL实现GCN	3<br>
+----2.1.3 GCN中的公式	8<br>
+--2.2 关系图卷积网络	8<br>
+----2.2.1 R-GCN简介	9<br>
+----2.2.2 R-GCN的关键思想	9<br>
+----2.2.3 在DGL中实现R-GCN	10<br>
+----2.2.4 第二项任务：链接预测	16<br>
+3.	线性图神经网络	16<br>
+--3.1 使用Cora数据集进行监督的社区检测任务	17<br>
+----3.1.1 社区检测	17<br>
+----3.1.2 Cora数据集	17<br>
+----3.1.3 来自Cora的二元社区子图和测试数据集	18<br>
+----3.1.4 在有监督的环境中进行社区检测	19<br>
+--3.2 线性图神经网络的关键思想	20<br>
+----3.2.1 什么是线性图？	20<br>
+----3.2.2 LGNN中的一层，算法结构	20<br>
+--3.3 在DGL中实现LGNN	21<br>
+----3.3.1 实现prev和deg作为张量操作	22<br>
+----3.3.2 在DGL中将radiusradius实现为消息传递	22<br>
+----3.3.3 实现fuse为稀疏矩阵乘法实	22<br>
+----3.3.4 完成f(x, y)	23<br>
+----3.3.5 将LGNN抽象链接为LGNN层	24<br>
+----3.3.6 链接LGNN层	24<br>
+--3.4 训练与推断	25<br>
+--3.5 可视化训练进程	26<br>
+--3.6 批处理并行图	27<br>
+4.	图注意力网络	28<br>
+--4.1 将注意力引入到GCN	28<br>
+--4.2 在DGL中的GAT	30<br>
+----4.2.1 公式（1）	31<br>
+----4.2.2 公式（2）	31<br>
+----4.2.3 公式（3）和（4）	32<br>
+----4.2.4 多头注意力	32<br>
+----4.2.5 将所有放在一起	33<br>
+--4.3 可视化和理解所学注意力	36<br>
+--4.4 蛋白质相互作用（PPI）网络	38<br>
+--4.5 下一个是什么？	41<br>
+5.	DGL中的Tree-LSTM	41<br>
+--5.1 任务和数据集	41<br>
+--5.2 步骤1：批量化	43<br>
+--5.3 步骤2：具有消息传递API的Tree-LSTM单元	44<br>
+--5.4 步骤3：定义遍历	45<br>
+--5.5 把它们放在一起	47<br>
+--5.6 主循环	48<br>
+6.	图生成模型	50<br>
+--6.1 介绍	51<br>
+--6.2 DGMG：主要流程	51<br>
+--6.3 DGMG：优化目标	53<br>
+--6.4 GMG：实现	54<br>
+----6.4.1 DGMG类	54<br>
+----6.4.2 编码动态图	55<br>
+----6.4.3 动作	58<br>
+----6.4.4 将它们放在一起	62<br>
+7.	胶囊网络	65<br>
+--7.1 胶囊的主要思想	65<br>
+--7.2 模型实现	65<br>
+----7.2.1 步骤1：设定和图初始化	65<br>
+----7.2.2 步骤2：定义消息传递功能	66<br>
+----7.2.3 步骤3：测试	67<br>
+8.	Transformer	69<br>
+--8.1 Transformer中的注意力层	70<br>
+--8.2 多头注意力机制	70<br>
+--8.3 DGL如何通过图神经网络实现Transformer	71<br>
+----8.3.1 图结构	71<br>
+----8.3.2 消息传递	71<br>
+----8.3.3 预处理和后处理	74<br>
+--8.4 Transformer graph的主要类	75<br>
+--8.5 训练	77<br>
+----8.5.1 任务和数据集	77<br>
+----8.5.2 构造图	78<br>
+--8.6 将它们放在一起	79<br>
+--8.7 可视化	80<br>
+----8.7.1 多头注意力	81<br>
+8.8	自适应通用Transformer	81<br>
+
+You can also find some other Chinese materials in the following places:<br>
+<a href="https://blog.csdn.net/weixin_45613751/">https://blog.csdn.net/weixin_45613751/</a><br>
+<a href="https://www.yuque.com/mamudechengxuyuan/od99k2/in0pv9">https://www.yuque.com/mamudechengxuyuan/od99k2/in0pv9</a><br>
+
+
+
+
 
