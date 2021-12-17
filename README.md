@@ -2,7 +2,7 @@
 
 2020年9月，DGL社区的一群热心贡献者把DGL用户指南译成了中文，方便广大中文用户群学习和使用DGL，这里贴下他们的地址:<br>
 <a href="https://docs.dgl.ai/en/0.6.x/api/python/">https://docs.dgl.ai/en/0.6.x/api/python/</a>
-================================================================
+
 # DGL_Chinese_Manual（DGL中文文档）
 This is the Chinese manual of the graph neural network library DGL, contains the User Guide and Model Tutorials.
 
