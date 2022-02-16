@@ -4,7 +4,7 @@
 <a href="https://docs.dgl.ai/en/0.6.x/api/python/">https://docs.dgl.ai/en/0.6.x/api/python/</a>
 
 # DGL_Chinese_Manual（DGL中文文档）
-This is the Chinese manual of the graph neural network library DGL, contains the User Guide and Model Tutorials.
+This is the unofficial Chinese manual of the graph neural network library DGL, contains the User Guide and Model Tutorials.
 
 Based on DGL English document：https://docs.dgl.ai/index.html
 
